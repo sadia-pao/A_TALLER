@@ -1,16 +1,27 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="en">
+=======
+<html lang="es">
+>>>>>>> main
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+=======
+    <title>Mis Tareas del Día</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+>>>>>>> main
 </head>
 
 <body>
 
+<<<<<<< HEAD
     <div class="contenedor">
         <h1>CITAS DEL DIA</h1>
         <p>Organizacion de las citas del dia</p>
@@ -31,6 +42,65 @@
             </div>
         </div>
     </div>
+=======
+    <div class="layout">
+
+        <!-- MENU LATERAL -->
+        <aside class="sidebar">
+            <h2>Mis Tareas</h2>
+            <i class="fa-solid fa-list"></i>
+
+            <button>Todas las tareas</button>
+            <button>Pendientes</button>
+            <button>Completadas</button>
+            <button>Calendario</button>
+            <button>Estadísticas</button>
+            <button>Ajustes</button>
+        </aside>
+
+        <!-- CONTENIDO -->
+        <main class="contenido">
+
+            <h1>Mis Tareas del Día</h1>
+            <p>Agrega, organiza y completa tus tareas diarias</p>
+
+            <!-- AGREGAR -->
+            <div class="agregar">
+                <input id="tarea" placeholder="¿Qué necesitas hacer?">
+
+                <select id="prioridad">
+                    <option>Baja</option>
+                    <option selected>Media</option>
+                    <option>Alta</option>
+                </select>
+
+                <input type="date" id="fecha">
+
+                <button onclick="agregarTarea()">+ Agregar Tarea</button>
+            </div>
+
+            <!-- FILTROS -->
+            <div class="filtros">
+                <button onclick="filtrar('todas')">Todas</button>
+                <button onclick="filtrar('pendientes')">Pendientes</button>
+                <button onclick="filtrar('completadas')">Completadas</button>
+
+                <div class="contador">
+                    Total <span id="total">0</span> |
+                    Pendientes <span id="pendientes">0</span> |
+                    Completadas <span id="completadas">0</span>
+                </div>
+            </div>
+
+            <!-- LISTA -->
+            <div id="lista"></div>
+
+        </main>
+
+    </div>
+
+    <script src="java.js"></script>
+>>>>>>> main
 </body>
 
 </html>
