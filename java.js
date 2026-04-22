@@ -4,7 +4,7 @@
 let tareas=[];
 let filtro="todas";
 
-function agregarTarea(){
+function agregarCita(){
 
 if(tarea.value.trim()==="") return;
 
