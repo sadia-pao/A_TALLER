@@ -1,130 +1,142 @@
-<<<<<<< HEAD
-=======
-
 body {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    background: #ddd0d0;
+    font-family: Arial;
+    background: #f0f2f5;
+    padding: 20px;
 }
+
 
 .contenedor {
-    width: 99%;
-    text-align: center;
+    display: flex;
+    gap: 20px;
+    background: white;
+    border-radius: 15px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+.contenedor>div:first-child {
+    width: 250px;
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+}
+
+.Tarea button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    background: #a0155b;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+.contenedor>div:last-child {
+    flex: 1;
+    padding: 20px;
+}
+
+
+.agregar {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.agregar input,
+.agregar select {
+    padding: 10px;
+    flex: 1;
+}
+/*
+.agregar button {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}*/
+
+
+.filtros {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.filtros button {
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.contador {
+    margin-left: auto;
+}
+
+
+.tarea-item {
+    background: #f8f9fa;
+    padding: 12px;
+    margin: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    border-left: 4px solid #3498db;
 }
 
 
 
-/*Escritorio*/
-@media (min-width: 1024px) {
+.tarea-acciones button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+
+.tarea-item.completada {
+    opacity: 0.6;
+    text-decoration: line-through;
+}
+
+/* MÓVIL */
+@media (max-width: 767px) {
     .contenedor {
-        flex-direction: row;
+        flex-direction: column;
     }
 
+    .contenedor>div:first-child {
+        width: 100%;
+    }
+
+    .agregar {
+        flex-direction: column;
+    }
+
+    .tarea-item {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
-/*Table*/
+/* TABLET */
 @media (min-width: 768px) and (max-width: 1023px) {
     .contenedor {
         flex-direction: column;
     }
-}
 
-/*celular*/
-@media (max-width: 767px) {
-    .contenedor{
-    flex-direction: colump;
+    .contenedor>div:first-child {
+        width: 100%;
     }
-
-body{
-margin:0;
-font-family:Arial;
-background:#f5f5f5;
 }
 
-/* LAYOUT */
-.layout{
-display:flex;
-height:100vh;
+/* ESCRITORIO */
+@media (min-width: 1024px) {
+    .agregar {
+        flex-wrap: wrap;
+    }
 }
-
-/* SIDEBAR */
-.sidebar{
-width:220px;
-background:#e9e9e9;
-padding:20px;
-display:flex;
-flex-direction:column;
-gap:10px;
-}
-
-.sidebar button{
-padding:10px;
-border:none;
-background:white;
-cursor:pointer;
-}
-
-/* CONTENIDO */
-.contenido{
-flex:1;
-padding:30px;
-}
-
-/* AGREGAR */
-.agregar{
-display:flex;
-gap:10px;
-flex-wrap:wrap;
-background:white;
-padding:15px;
-border-radius:8px;
-}
-
-.agregar input,
-.agregar select{
-padding:8px;
-}
-
-/* FILTROS */
-.filtros{
-margin-top:20px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-flex-wrap:wrap;
-}
-
-/* TARJETAS */
-.tarea{
-background:white;
-margin-top:15px;
-padding:15px;
-border-radius:8px;
-
-display:flex;
-justify-content:space-between;
-align-items:center;
-flex-wrap:wrap;
-}
-
-.completa{
-text-decoration:line-through;
-opacity:.6;
-}
-
-button{
-cursor:pointer;
-padding:6px 10px;
-}
-
-/* RESPONSIVE */
-@media(max-width:768px){
-.sidebar{
-display:none;
-}
-
-.layout{
-flex-direction:column;
-}
-
-}
->>>>>>> main

@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-=======
 <!DOCTYPE html>
-
 <html lang="en">
-
 <html lang="es">
 
 
@@ -15,39 +11,13 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 
-    <title>Mis Tareas del Día</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 
 <body>
 
     <div class="contenedor">
-        <h1>CITAS DEL DIA</h1>
-        <p>Organizacion de las citas del dia</p>
-        <i class="fa-solid fa-circle-user"></i>
-        <div>
-            <h1>TAREAS</h1>
-        </div>
-
-        <div>
-
-        <h1>AGREGAR TAREA</h1>
-        </div>
-
-        <div>
-
-            <div>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="layout">
-
-        <!-- MENU LATERAL -->
-        <aside class="sidebar">
+        <div class="Tarea">
             <h2>Mis Tareas</h2>
             <i class="fa-solid fa-list"></i>
 
@@ -57,15 +27,13 @@
             <button>Calendario</button>
             <button>Estadísticas</button>
             <button>Ajustes</button>
-        </aside>
+        </div>
 
-        <!-- CONTENIDO -->
-        <main class="contenido">
+        <div>
+            <i class="fa-solid fa-circle-user"></i>
+            <h1>Agenda medica del dia</h1>
+            <p>Cuidamos de tu salud y bienestar en un etorno moderno y acogedor</p>
 
-            <h1>Mis Tareas del Día</h1>
-            <p>Agrega, organiza y completa tus tareas diarias</p>
-
-            <!-- AGREGAR -->
             <div class="agregar">
                 <input id="tarea" placeholder="¿Qué necesitas hacer?">
 
@@ -77,10 +45,10 @@
 
                 <input type="date" id="fecha">
 
-                <button onclick="agregarTarea()">+ Agregar Tarea</button>
+                <button onclick="agregarTarea()">+ Agregar Cita</button>
             </div>
 
-            <!-- FILTROS -->
+
             <div class="filtros">
                 <button onclick="filtrar('todas')">Todas</button>
                 <button onclick="filtrar('pendientes')">Pendientes</button>
@@ -91,12 +59,19 @@
                     Pendientes <span id="pendientes">0</span> |
                     Completadas <span id="completadas">0</span>
                 </div>
+
+
             </div>
 
-            <!-- LISTA -->
+
             <div id="lista"></div>
 
-        </main>
+            <div class="footer">
+                <p>© 2024 Mis Tareas del Día | Hecho con ❤ por Estudiant@ Web</p>
+            </div>
+
+        </div>
+
 
     </div>
 
@@ -105,4 +80,3 @@
 </body>
 
 </html>
->>>>>>> main
