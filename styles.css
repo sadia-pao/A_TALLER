@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background: #ddd0d0;
+}
+
+.contenedor {
+    width: 99%;
+    text-align: center;
+}
+
+
+/*Escritorio*/
+@media (min-width: 1024px) {
+    .Table {
+        display: none;
+    }
+    .celular {
+        display: none;
+    }
+}
+
+/*Table*/
+@media (min-width: 768px) and (max-width: 1023px) {
+    .Escritorio {
+        display: none;
+    }
+    .celular {
+        display: none;
+    }
+}
+
+/*celular*/
+@media (max-width: 767px) {
+    .Escritorio {
+        display: none;
+    }
+    .Table {
+        display: none;
+    }
+}
