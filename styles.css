@@ -9,32 +9,25 @@ body {
 }
 
 
+
 /*Escritorio*/
 @media (min-width: 1024px) {
-    .Table {
-        display: none;
+    .contenedor {
+        flex-direction: row;
     }
-    .celular {
-        display: none;
-    }
+
 }
 
 /*Table*/
 @media (min-width: 768px) and (max-width: 1023px) {
-    .Escritorio {
-        display: none;
-    }
-    .celular {
-        display: none;
+    .contenedor {
+        flex-direction: column;
     }
 }
 
 /*celular*/
 @media (max-width: 767px) {
-    .Escritorio {
-        display: none;
-    }
-    .Table {
-        display: none;
+    .contenedor{
+    flex-direction: colump;
     }
 }
