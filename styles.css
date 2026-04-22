@@ -17,7 +17,7 @@ body {
 
 .contenedor>div:first-child {
     width: 250px;
-    background: #2c3e50;
+    background: #8ea6be;
     color: white;
     padding: 20px;
 }
@@ -27,7 +27,7 @@ body {
     width: 100%;
     padding: 10px;
     margin: 8px 0;
-    background: #a0155b;
+    background: #7a9ad6;
     border: none;
     color: white;
     border-radius: 8px;
